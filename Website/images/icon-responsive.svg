@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172.145" height="48.427" viewBox="0 0 172.145 48.427">
+  <g id="Groupe_8" data-name="Groupe 8" transform="translate(-256.786 -153.881)">
+    <text id="You" transform="translate(268 154.095)" fill="#fff" font-size="40" font-family="Consolas-Bold, Consolas" font-weight="700"><tspan x="0" y="37">You</tspan></text>
+    <text id="Meal" transform="translate(338 156.095)" font-size="40" font-family="BerlinSansFB-Reg, Berlin Sans FB"><tspan x="0" y="36">Meal</tspan></text>
+    <g id="Groupe_2" data-name="Groupe 2" transform="translate(272.436 169.531) rotate(180)">
+      <line id="Ligne_2" data-name="Ligne 2" y2="15.436" transform="translate(14.15)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="Ligne_3" data-name="Ligne 3" x1="15.436" transform="translate(0 14.15)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+    <g id="Groupe_6" data-name="Groupe 6" transform="translate(413.282 186.659)">
+      <line id="Ligne_2-2" data-name="Ligne 2" y2="15.436" transform="translate(14.15)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="Ligne_3-2" data-name="Ligne 3" x1="15.436" transform="translate(0 14.15)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

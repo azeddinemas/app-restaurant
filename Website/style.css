@@ -1,0 +1,1089 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* login starts */
+
+.bg {
+    background-image: url("Visuals/login1.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+}
+
+.submain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.submain .logo {
+    width: 100%;
+    text-align: center;
+}
+
+.submain .logo img {
+    width: 70%;
+}
+
+.login-container {
+    width: 100%;
+    height: 100%;
+    padding: 5% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(255, 196, 32, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.form-container a {
+    color: black;
+}
+
+.form-main {
+    width: 100%;
+}
+
+.form-main button {
+    height: 50px;
+    width: 60%;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    margin: 20px 0 20px 0;
+}
+
+.form-main input {
+    margin: 0 0 .4em 0;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.form-main [type='email'] {
+    padding: 20px;
+}
+
+.form-main [type='email']:focus {
+    border: 0;
+    border-bottom: 5px solid black;
+    color: #2c3e50;
+    outline: none;
+}
+
+.form-main [type='password'] {
+    padding: 20px;
+}
+
+.form-main [type='password']:focus {
+    border: 0;
+    border-bottom: 5px solid black;
+    color: #2c3e50;
+    outline: none;
+}
+
+
+/* login ends */
+
+
+/* humbergermenu starts */
+
+
+/* humbergermenu ends */
+
+
+/* header starts */
+
+.logo-menu {
+    display: none;
+}
+
+header {
+    width: 92%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+header .logo {
+    width: 12%;
+    vertical-align: middle;
+}
+
+header .liste-header a {
+    color: black;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+header .liste-header a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+header .liste-header ul {
+    display: none;
+}
+
+header .button-login button {
+    width: 73px;
+    height: 28px;
+    background-color: #FFC420;
+    border: none;
+    border-radius: 5px;
+}
+
+header label {
+    font-size: 34px;
+    cursor: pointer;
+    width: 46px;
+    height: 49px;
+    padding: 7px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 46%);
+    display: none;
+}
+
+header input {
+    display: none;
+}
+
+header .profile-generale {
+    display: none;
+}
+
+header .profile-generale .profile {
+    display: none;
+}
+
+header .profile-generale .profile a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 35px;
+}
+
+header .profile-generale label::before {
+    content: "\f2be";
+    font-family: "FontAwesome";
+}
+
+@media (max-width: 992px) {
+    header .profile-generale {
+        display: block;
+    }
+    .logo-menu {
+        display: block;
+        width: 43%;
+        margin: 120px 0px 30px 30px;
+    }
+    header label {
+        display: block;
+    }
+    header .logo {
+        display: none;
+    }
+    header .liste-header {
+        position: fixed;
+        top: 1px;
+        left: -485px;
+        height: 751px;
+        width: 49%;
+        background-color: #FFC420;
+        border-radius: 10px;
+        gap: 46px;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+    }
+    header #check:checked+.liste-header {
+        left: 0px;
+        transition: 0.8s;
+    }
+    header .liste-header ul {
+        display: block;
+        color: white;
+        position: absolute;
+        bottom: 72px;
+        right: 32px;
+        list-style: none;
+        font-size: 20px;
+    }
+    header .button-login {
+        display: none;
+    }
+    header .profile-generale .profile {
+        position: fixed;
+        top: -779px;
+        left: 55%;
+        width: 50%;
+        height: 762px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFC420;
+        border-radius: 10px;
+        z-index: -1;
+    }
+    header .profile-generale #toggel:checked+.profile {
+        top: 0px;
+        transition: 0.8s;
+    }
+    header .profile-generale .your-profile {
+        width: 39%;
+        margin-top: 26px;
+    }
+    header .profile-generale .profile ul {
+        position: absolute;
+        bottom: 33px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    header .profile-generale .profile ul span {
+        color: black;
+    }
+}
+
+
+/* header ends */
+
+
+/* #######  main starts */
+
+
+/* divider starts */
+
+main .section1 .divider {
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+main .section1 .divider h4 {
+    padding: 5px 0;
+}
+
+
+/* divider ends */
+
+
+/* banner1 starts */
+
+main .section1 .bgmain {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Visuals/home1.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+main .section1 .bgmain h1 {
+    margin: 0;
+}
+
+main .section1 .bgmain .bg1 {
+    width: 40%;
+}
+
+main .section1 .bgmain .bg2 {
+    width: 30%;
+}
+
+main .section1 h4 {
+    text-align: start;
+}
+
+main .section1 h1 {
+    text-align: start;
+}
+
+main .section1 .divider h4 {
+    text-align: center;
+}
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 196, 32, 1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 20px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 70%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: rgba(255, 196, 32, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 620px) {
+    main .section1 .bgmain .bg2 {
+        display: none;
+    }
+    main .section1 .bgmain .bg1 {
+        width: 100%;
+        text-align: center;
+    }
+    main .section1 h4 {
+        text-align: center;
+    }
+    main .section1 h1 {
+        text-align: center;
+    }
+}
+
+
+/* banner1 ends */
+
+
+/* today's start */
+
+main h1,
+h4 {
+    text-align: center;
+}
+
+#Today h4 {
+    color: rgba(255, 196, 32, 1);
+}
+
+main .todaymeal {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+main .todaymeal .m1 {
+    width: 30%;
+    max-width: 220px;
+    min-width: 180px;
+    border-radius: 20px;
+    padding: 0 0 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+main .todaymeal .m2 {
+    width: 30%;
+    max-width: 220px;
+    min-width: 180px;
+    border-radius: 20px;
+    padding: 0 0 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+main .todaymeal button {
+    margin: 10px 0;
+}
+
+main .todaymeal h3,
+p {
+    margin: 10px 0;
+}
+
+main .todaymeal img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+main .todaymeal h3 {
+    color: rgba(255, 196, 32, 1);
+    text-align: center;
+}
+
+main .todaymeal .button-28 {
+    color: black;
+}
+
+
+/* today's ends */
+
+
+/* week start */
+
+.weekmeal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.weekmeal div {
+    margin: 10px;
+}
+
+.weekmeal button {
+    font-size: 10px;
+}
+
+.weekmeal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.weekmeal2 div {
+    margin: 10px;
+}
+
+.weekmeal2 button {
+    font-size: 10px;
+}
+
+.weekmealbtween {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.todaymeal .weekmeal .m1 {
+    max-width: 100px;
+}
+
+.todaymeal .weekmeal .m2 {
+    max-width: 100px;
+}
+
+@media screen and (max-width: 810px) {
+    .todaymeal {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .weekmealbtween {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* week ends */
+
+
+/* rate start */
+
+.rating {
+    background-color: rgba(255, 196, 32, 1);
+    color: black;
+    margin: auto;
+    padding: 20px 20px;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todaymeal .rating h3 {
+    color: black;
+}
+
+.rating .m1 {
+    background-color: white;
+}
+
+.rat1 {
+    width: 40%;
+    text-align: start;
+}
+
+.rat1 p {
+    font-size: 12px;
+}
+
+.rat2 {
+    width: 60%;
+    text-align: start;
+    padding: 30px;
+}
+
+.rat2 p {
+    font-size: 10px;
+}
+
+.rat2 .stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rat2 .stars .all {
+    width: 40%;
+}
+
+.rat2 .stars .all h4 {
+    text-align: start;
+}
+
+.rat1 .m1 p {
+    text-align: center;
+}
+
+
+/**Debut  Etoiles **/
+
+body main #rete2 .rating1 {
+    min-width: 30%;
+}
+
+body .rating1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+}
+
+.rating1 a:focus,
+.rating1 a:hover,
+.rating1 a:hover~a,
+.rating1 a:focus~a {
+    color: white;
+}
+
+
+/**Fin Etoile **/
+
+
+/* comment box */
+
+#Rate .rat2 textarea {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: grey;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* CSS */
+
+.button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 30px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+main .rat2 .btn {
+    text-align: center;
+}
+
+@media screen and (max-width: 620px) {
+    .rating {
+        flex-wrap: wrap;
+    }
+    .rat2 {
+        min-width: 100%;
+    }
+    .weekmeal2 div {
+        margin: 10px 0;
+    }
+    .weekmeal {
+        flex-wrap: wrap;
+    }
+    #Week .todaymeal h3 {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .rating {
+        width: 90%;
+    }
+}
+
+
+/* rate ends */
+
+
+/* add meal starts */
+
+#New .todaymeal h3 {
+    margin: 0;
+}
+
+#New .btn .button-27 {
+    color: black;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    border: none;
+    width: 30%;
+}
+
+#New .btn i,
+span {
+    vertical-align: middle;
+}
+
+#New .btn {
+    text-align: center;
+}
+
+#New h2 {
+    text-align: center;
+    color: rgba(255, 196, 32, 1);
+    padding: 20px 0;
+}
+
+#New .todaymeal .m1 {
+    max-width: 220px;
+    min-width: 220px;
+}
+
+#New .n2 {
+    margin-top: 40px;
+}
+
+#New .n3 {
+    margin-top: 80px;
+}
+
+#New {
+    margin: 5% 0;
+}
+
+@media screen and (max-width: 484px) {
+    #New .n2 {
+        margin-top: 0px;
+    }
+    #New .n3 {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 742px) {
+    #New .btn .button-27 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #New .btn .button-27 {
+        width: 80%;
+    }
+}
+
+
+/* add meal ends */
+
+
+/* ####### main ends */
+
+
+/* footer start */
+
+.footer1 {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.footer1 img {
+    padding: 20px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.footer2 {
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+}
+
+
+/* footer ends */
+
+
+/* profil starts */
+
+.profilmenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.side1 #pimg {
+    background-color: rgba(255, 196, 32, 1);
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+#pimg img {
+    width: 140px;
+    padding: 10px 0;
+    color: black;
+}
+
+#info {
+    text-align: center;
+}
+
+.side21,
+.side22 {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 0 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    height: 100%;
+}
+
+.side1 {
+    text-align: center;
+    width: 47%;
+    border-radius: 20px;
+    padding: 0 0 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+.side2 {
+    width: 47%;
+}
+
+.side23 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.side23 div {
+    width: 47%;
+}
+
+.side23 div button {
+    width: 100%;
+}
+
+.side23 div button i,
+span {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+    .profilmenu {
+        flex-wrap: wrap;
+    }
+    .side1,
+    .side2 {
+        width: 90%;
+    }
+    .side2 {
+        margin-top: 20px;
+    }
+}
+
+
+/* profil ends */
+
+
+/* chef panel starts */
+
+.stats #Today h3,
+h5 {
+    text-align: center;
+}
+
+.stats #Today p {
+    font-size: 70px;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    display: none;
+}
+
+.weekselect {
+    padding: 0;
+    margin-right: 10px;
+    width: 25%;
+    height: 44px;
+    border-radius: 15px;
+    border: 3px solid black;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+
+.weekselect select {
+    color: gray;
+    font-size: 20px;
+    padding: 7px 10px;
+    width: 100%;
+}
+
+.weekselect {
+    padding: 0;
+    margin: 5px;
+    width: 25%;
+}
+
+.selector .button-27 {
+    width: 100%;
+}
+
+.selector .btn {
+    width: 15%;
+}
+
+.stoday h3 {
+    text-align: center;
+}
+
+
+/* week edit */
+
+.weekedit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.weekedit h3 {
+    margin: 20px 0;
+}
+
+.weekedit .btn .button-27 {
+    color: black;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    border: none;
+    width: 50%;
+}
+
+.weekedit .btn i,
+span {
+    vertical-align: middle;
+}
+
+.weekedit .btn {
+    text-align: center;
+}
+
+.stats #Rate p {
+    font-size: 15px;
+}
+
+.stats #Rate h4 {
+    color: black;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#prof {
+    color: black;
+    background-color: white;
+}
+
+#Rate .rat2 .r2 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* chef panel ends */
+
+
+/* admin panel starts */
+
+main .admin {
+    padding: 20px;
+}
+
+main .adminpanel {
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 0 10px 0;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .adminpanel div {
+    width: 100%;
+}
+
+.adminpanel .rclogs,
+.vlogs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rclogs div {
+    width: 100%;
+}
+
+.rclogs .button-27 {
+    width: 90%;
+}
+
+.vlogs .button-27 {
+    width: 90%;
+}
+
+.rclogs .button-27 i,
+span {
+    vertical-align: middle;
+}
+
+.vlogs .button-27 i,
+span {
+    vertical-align: middle;
+}
+
+.clog {
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.logged-in {
+    color: green;
+}
+
+.logged-out {
+    color: red;
+}
+
+
+/* admin panel ends */
